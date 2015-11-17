@@ -11,4 +11,4 @@ Sessions
 ====
 
  - **Session 1** : [Hello Python](https://github.com/usaarhat/pywarmups/blob/master/session1.md)
- - **Session 1** : [Comprehending ontainers](https://github.com/usaarhat/pywarmups/blob/master/session2.md)
+ - **Session 2** : [Comprehending ontainers](https://github.com/usaarhat/pywarmups/blob/master/session2.md)
