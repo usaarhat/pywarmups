@@ -11,5 +11,5 @@ This is a repository to learn some basic python programming (in tandem with the 
 Sessions
 ====
 
- - **Session 1** : [Hello Python]()
- - **Session 1** : [Comprehending ontainers]()
+ - **Session 1** : [Hello Python](https://github.com/usaarhat/pywarmups/blob/master/session1.md)
+ - **Session 1** : [Comprehending ontainers](https://github.com/usaarhat/pywarmups/blob/master/session2.md)
