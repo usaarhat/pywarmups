@@ -39,7 +39,7 @@ print(yy)
 
 Computers are not as smart as the humans who created them. They don't know strings, integers, numbers, text or any sort of types. We, as humans, have to specifically tell them. And in the case of python, when we create a string/text object, python assumes that anything embedded between quotation marks as strings and tell the computer that the thing we are telling the computer is a string.
 
-We can know the type of a variable in python using one of the [built-in functions](https://docs.python.org/2/library/functions.html) `type()`:
+We can know the type of a variable in python using one of the [built-in functions](https://docs.python.org/3.5/library/functions.html) `type()`:
 
 ```python
 x = "Hello World"
@@ -99,7 +99,7 @@ print(alist_with_no_2s_and_no_6s)
 
 ## Pythonic Slices (not Pizza)
 
-To access a particular subset of a list, one should access the subset using [slices](https://docs.python.org/2/tutorial/introduction.html):
+To access a particular subset of a list, one should access the subset using [slices](https://docs.python.org/3.5/tutorial/introduction.html):
 
 ```python
 a = [1,1,2,2,3,4,5,6,6]
