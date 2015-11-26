@@ -10,7 +10,7 @@ So let's fire up the https://try.jupyter.org/ notebook and let's go...
 Build up on Built-ins
 ====
 
-Python comes with *"batteries included"*, we have introduced some [built-in](https://docs.python.org/2/library/functions.html) functions that in the previous warm-up session:
+Python comes with *"batteries included"*, we have introduced some [built-in](https://docs.python.org/3.5/library/functions.html) functions that in the previous warm-up session:
 
 ```python
 list1 = [6,1,2,7,3,4,2,6,3]
@@ -32,7 +32,7 @@ sorted(list1)
 
 Once again, we see that the function naming in python is intuitive and without even looking at the outputs of the built-in functions above, we know what the function does. *"Explicit is better than implicit"* - [The Zen of Python](https://www.python.org/dev/peps/pep-0020/).
 
-**But how many built-ins are there in python?** 76 , see https://docs.python.org/2/library/functions.html
+**But how many built-ins are there in python?** 76 , see https://docs.python.org/3.5/library/functions.html
 
 We'll see more of them in the later sessions
 
@@ -139,7 +139,7 @@ list1 = [1, 2, 3, 4, 5]
 dict1 = {'the': 2, 'quick':1 , 'brown': 1}
 ```
 
-And other than the basic data container, you can use specialized data containers that can make your code looks cleaner and also use some of the nifty "batteries included" features. Instead of counting the words like we did using a dictionary comprehension, there is a specialized data container call [`collections.Counter`](https://docs.python.org/2/library/collections.html#collections.Counter). And to initlize the same `word_counter`, we can simply do this:
+And other than the basic data container, you can use specialized data containers that can make your code looks cleaner and also use some of the nifty "batteries included" features. Instead of counting the words like we did using a dictionary comprehension, there is a specialized data container call [`collections.Counter`](https://docs.python.org/3.5/library/collections.html#collections.Counter). And to initlize the same `word_counter`, we can simply do this:
 
 
 ```python
