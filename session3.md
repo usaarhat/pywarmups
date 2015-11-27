@@ -1,7 +1,9 @@
-Condition
+Witzelsucht Conditions
 ====
 
 This warm-up session would be a little more theoretic than practical. It might seen a little abstract and you wonder why you need to know this. But let's try and see whether they help us charm the python =)
+
+The end of the session will lead to Star Wars, I promise.
 
 Fire up our https://try.jupyter.org/ notebook and let's go...
 
@@ -86,7 +88,7 @@ SyntaxError: invalid syntax
   
 ----
 
-Condtions 
+Condtions without Shampoo
 =====
 
 Now back to main topic of this *pywarmup*, conditions and iterations are the two most basic things in programming. Almost all programming languages builds software based on these two principles. 
@@ -231,3 +233,4 @@ Congratualations!!!
 
 This is a tough warmup session and now you have learnt more about `builtins`, some basics of the `keywords` and quite a lot of quirky python conditions!!
 
+**As promised**: *Read up on [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions), you must*.
