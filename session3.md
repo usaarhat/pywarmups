@@ -189,23 +189,18 @@ print (newnumber)
 
 Play around the conditions with different inputs and add your own conditions and see what you get as output after you `shift + enter`. You shall be enlightened by some quirks of python conditions. 
 
-Do note that all conditions without the `if-elif-else` keywords are a boolean, i.e. they are either `True` or `False`, also parenthesis like in math works the same in python conditions:
+Do note that all conditions without the `if-elif-else` keywords are a boolean, i.e. they are either `True` or `False`, also parenthesis like in math works the same in python conditions, e.g.:
 
-e.g.:
-
-```
+```python
 a = 3
 print(3 > 2)
 print(2 is True) # Returns False because 2 is a number and True is a boolean.
 print((3 > 2) is True) # Returns True because `(3>2)` returns a True and `True is True`
 ```
 
-
 These conditions goes beyond numerical comparisons, in python one can check for string conditions, sometimes even strange boolean conditions. But we will go through all that in the later sessions. For a taster:
 
-
-
-```
+``` python
 # Quirky but nice string comparisons
 astring = 'a'
 bstring = 'b'
@@ -222,21 +217,17 @@ else:
 
 # Nully strings.
 astring = ''
-if astring is '': # It's the same expression as the above but shorter.
+if astring is not '': 
     print('This checks for whether astring is not an empty string.)
 
 if astring: # It's the same expression as the above but shorter.
     print('This checks for whether astring is not an empty string.)
-
-    
-    
-nully_thing = None
-if nully_thing
 ```
 
+----
 
-Sometimes you might seem non-pythonic `if-else` conditions written by non-python programmers that looks like this:
+Congratualations!!!
+====
 
-```python
-a = 6
-if (a == 3)
+This is a tough warmup session and now you have learnt more about `builtins`, some basics of the `keywords` and quite a lot of quirky python conditions!!
+
