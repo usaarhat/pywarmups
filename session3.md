@@ -228,7 +228,7 @@ if astring: # It's the same expression as the above but shorter.
 
 ----
 
-Congratualations!!!
+Congratulations!!!
 ====
 
 This is a tough warmup session and now you have learnt more about `builtins`, some basics of the `keywords` and quite a lot of quirky python conditions!!
