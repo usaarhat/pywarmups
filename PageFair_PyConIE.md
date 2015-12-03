@@ -34,10 +34,10 @@ print name
 
 ## Choices
 
-1. `snow Xtore`
-*  `Throws an Error`
-*  `snowXstore`
-*  `X`
+> 1. `snow Xtore`
+> *  `Throws an Error`
+> *  `snowXstore`
+> *  `X`
 
 ## Answer:
 
@@ -73,7 +73,14 @@ if re.match(pattern, 'text.back'):
 print sum
 ```
 
-[out]:
+## Choices
+
+> 1. 7 
+> 2. 15
+> 3. 12
+> 4. 5
+
+## Answer
 
     5
 
@@ -96,7 +103,14 @@ sum = kvps['1'][0] + theCopy['1'][0]
 print sum
 ```
 
-[out]:
+## Choices
+
+> 1. 10  
+> * 6
+> * 2
+> * 8
+
+## Answer
 
     10
 
@@ -111,7 +125,14 @@ name = 'snow storm'
 print '%s' % name[6:8]
 ```
 
-[out]:
+## Choices
+
+> 1. sto
+> * so 
+> * tor
+> * to
+
+## Answer
 
     to
 
@@ -138,7 +159,15 @@ for m in dir(f):
 print f.val
 ```
 
-[out]:
+## Choices
+
+> 1. 8
+> * 4
+> * Throws an Error
+> * 2
+
+## Answer
+
 
     ---------------------------------------------------------------------------
 
