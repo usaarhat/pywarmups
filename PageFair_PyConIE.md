@@ -12,10 +12,10 @@ print f()
 ```
 
 ## Choices: 
-1. `[]`
-* `[1]`
-* `[1,1]`
-* `Throws an error.`
+> 1. `[]`
+> * `[1]`
+> * `[1,1]`
+> * `Throws an error.`
 
 ## Answer:
 
