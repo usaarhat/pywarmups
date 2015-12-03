@@ -24,6 +24,9 @@ print f()
 
 **Explanation**: Python's default arguments are evluated once when the function is defined, not each time the function is called.
 
+----
+
+
 ## Question 2
 
 ```python
@@ -56,6 +59,8 @@ print name
 
 **Explanation**: Python strings are immutable
 
+----
+
 ## Question 3
 
 ```python
@@ -87,6 +92,7 @@ print sum
 
 **Explanation**: re.match checks if the pattern exists at the start of the string, so there is no match for 'text.back'
 
+----
 
 ## Question 4
 
@@ -117,6 +123,7 @@ print sum
 
 **Explanation**: The copy method provides a shallow copy, therefore the list being held as the value inside the dictionary is the same list in the copy as the original
 
+----
 
 ## Question 5 
 
@@ -138,6 +145,8 @@ print '%s' % name[6:8]
 
 
 **Explanation**: Slices the string from index 6 to index 8 not including index 8. The firest character in string is position 0
+
+----
 
 ## Question 6
 
@@ -186,6 +195,8 @@ print f.val
 
 **Explanation**: Exception is thrown when trying to call __init__ mehtod of the object without any parameters: 
 
+----
+
 ## Question 7
 
 ```python
@@ -198,12 +209,21 @@ obama.__dict__['age'] = 49
 print obama.age + len(obama.__dict__)
 ```
 
-[out]:
+## Choice
+
+> 1. 51 
+> * 100
+> * 49
+> * 149
+
+## Answer
 
     51
 
 
 **Explanation**: We have created a member variable named 'age' by adding it directory to the objects dictionary, so there are 2 items in the dictionary: 'age' and 'id'
+
+----
 
 ## Question 8
 
@@ -214,12 +234,21 @@ set2 = set(gen)
 print 'p' in set1, 'y' in set2
 ```
 
-[out]:
+## Choices
+
+> 1. True True
+> *  False False
+> *  Throws an error
+> *  True False
+
+## Answer
 
     True False
 
 
 **Explanation**: Generator expression returns the characters of 'pycon' when creating set1 but has nothing to return when creating set2
+
+----
 
 ## Question 9
 
@@ -228,7 +257,15 @@ print 'p' in set1, 'y' in set2
 any, bin, decimal, format
 ```
 
-[out]:
+## Choices
+
+> 1. all of the above are not built-in
+> * decimal
+> * bin
+> * format
+
+
+## Answer
 
     ---------------------------------------------------------------------------
 
@@ -241,6 +278,8 @@ any, bin, decimal, format
 
     NameError: name 'decimal' is not defined
 
+
+----
 
 ## Question 10
 
