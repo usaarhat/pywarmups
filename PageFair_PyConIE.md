@@ -288,7 +288,14 @@ any, bin, decimal, format
 # that it lands on heads exactly one time?
 ```
 
-[out]:
+## Choices
+
+> 1. 0.5
+> *  0.125
+> *  0.375
+> *  0.25
+
+## Answer
 
 > If you toss a coin three times, there are a total of 
 > 8 possible outcomes.
