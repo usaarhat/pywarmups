@@ -10,7 +10,14 @@ def f(x=[]):
 f()
 print f()
 ```
-[out]:
+
+## Choices: 
+1. `[]`
+* `[1]`
+* `[1,1]`
+* `Throws an error.`
+
+## Answer:
 
     [1, 1]
 
@@ -25,7 +32,14 @@ name[5] = 'X'
 print name
 ```
 
-[out]:
+## Choices
+
+1. `snow Xtore`
+*  `Throws an Error`
+*  `snowXstore`
+*  `X`
+
+## Answer:
 
     ---------------------------------------------------------------------------
 
