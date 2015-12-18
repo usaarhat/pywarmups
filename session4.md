@@ -176,7 +176,7 @@ def divide_plus_one(x,y):
 divide_plus_one(10,0)
 ```
 
-In most cases, there are other ways to handle (i) file I/O (but now with the `with` context manager, this is normally not needed), (ii) threading (e.g. lock releases in multi-threading and multi-core), (iii) database cursor manipulation (e.g. to close a cursor or to commit the queries). For these use cases, it's out of scope for what we do, but someday we'll need it. 
+In most cases, there are other ways to handle without using `finally`, but there are cases that `finally` can be very useful, e.g. (i) file I/O (but now with the `with` context manager, this is normally not needed), (ii) threading (e.g. lock releases in multi-threading and multi-core), (iii) database cursor manipulation (e.g. to close a cursor or to commit the queries). For these use cases, it's out of scope for what we do, but someday we'll need it. 
 
 Congratulations!!!
 ====
