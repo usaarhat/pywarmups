@@ -32,7 +32,7 @@ sorted(list1)
 
 Once again, we see that the function naming in python is intuitive and without even looking at the outputs of the built-in functions above, we know what the function does. *"Explicit is better than implicit"* - [The Zen of Python](https://www.python.org/dev/peps/pep-0020/).
 
-**But how many built-ins are there in python?** 76 , see https://docs.python.org/3.5/library/functions.html
+**But how many built-ins are there in python?**  See https://docs.python.org/3.5/library/functions.html
 
 We'll see more of them in the later sessions
 
