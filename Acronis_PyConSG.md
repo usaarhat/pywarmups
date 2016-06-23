@@ -248,4 +248,56 @@ Ah, but we can append, why?! Now that brings us to a dark place of programming w
 
 A good starting point would be http://stackoverflow.com/questions/9073995/difference-between-mutation-rebinding-copying-value-and-assignment-operator
 
-So a 
+----
+
+Question 5
+====
+
+Write a function that count and print number of words in given string. Word is a sequence of symbols without whitespaces.
+
+For example, for input string "one one two one two three one two three four" your function should print:
+
+```python
+"one" : 4
+"two" : 3
+"three": 2
+"four": 1
+```
+
+If we don't know how to solve a looping kinda problems in Python, the first thing to do is always to look into [`itertools`](https://docs.python.org/3.5/library/itertools.html) and [`collections`](https://docs.python.org/3.5/library/collections.html) where powerful functions are already coded and most probably optimized to do you looping. 
+
+Answer
+====
+
+```python
+>>> from collections import Counter
+>>> s = "one one two one two three one two three four"
+>>> Counter(s.split())
+Counter({'one': 4, 'two': 3, 'three': 2, 'four': 1})
+>>> for k,v in Counter(s.split()).most_common():
+...     print '"{}" : {}'.format(k,v)
+... 
+"one" : 4
+"two" : 3
+"three" : 2
+"four" : 1
+```
+
+Question 6
+====
+
+Write a function that accepts nested lists of any depth and returns "flattened" list - list of elements from first list without sub lists.
+
+For example:
+
+```
+[[[1]]] -> [1]
+[[1,2], [3,4,[5,6]],7] -> [1,2,3,4,5,6,7]
+```
+
+Hmmm, flattening is a much-talked about feature disccused/proposed in core Python, as [Raymond Hettinger puts it](https://mail.python.org/pipermail/python-dev/2006-September/068957.html):
+
+    It has been discussed ad nauseam on comp.lang.python. People seem to enjoy writing their own versions of flatten more than finding legitimate use cases that don't already have trivial solutions.
+    
+    A general purpose flattener needs some way to be told what is atomic and what can be further subdivided. Also, it is not obvious how the algorithm should be extended to cover inputs with tree-like data structures with data at nodes as well as the leaves (preorder, postorder, inorder traversal, etc.)
+
