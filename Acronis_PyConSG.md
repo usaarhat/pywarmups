@@ -199,3 +199,53 @@ The other way is (IMHO) way cooler by using the `global` keyword inside the func
 
 Question 4
 ====
+
+What will be the output of the code below:
+
+```python
+value = [1]
+
+def change():
+   value.append(2)
+   
+change()
+print value
+```
+
+Similarly, the obvious answer would be SyntaxError since there's only 3 spaces instead of 4. So let's assume that there's 4 spaces in the question. 
+
+```python
+>>> value = [1]
+>>> def change():
+...     value.append(2)
+... 
+>>> change()
+>>> print value
+[1, 2]
+```
+
+Ah ha! Now that's interesting, we have a `value` list in the global but now apparently, the function is change the global variable outside of its scope.
+
+On StackOverflow, there's a good answer for this: http://stackoverflow.com/a/6329536/610569
+
+So let's test it a little, below we'll see that if we try to change the existing element inside the global list, it doesn't change the element in the global list:
+
+```python
+>>> value = [1]
+>>> def change():
+...     value[0] = 2
+... 
+>>> print value
+[1]
+```
+
+Ah, but we can append, why?! Now that brings us to a dark place of programming where we talk about:
+
+ - mutation / mutable vs immutable
+ - rebinding
+ - copy by value 
+ - copy by reference
+
+A good starting point would be http://stackoverflow.com/questions/9073995/difference-between-mutation-rebinding-copying-value-and-assignment-operator
+
+So a 
