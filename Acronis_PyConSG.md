@@ -94,7 +94,7 @@ This is an easy one but you might get stymied by the `**` operator, this is simp
 [0, 1, 4, 9, 16]
 ```
 
-If we take a closer look and compare it to `x*x` and `math.pow(x,2)` is the same as using `x**2`:
+If we take a closer look and compare it to `x*x` and `math.pow(x,2)`, it is the same as using `x**2`:
 
 ```python
 >>> [x ** 2 for x in range(5)]
