@@ -300,3 +300,20 @@ Hmmm, flattening is a much-talked about feature disccused/proposed in core Pytho
 > It has been discussed ad nauseam on comp.lang.python. People seem to enjoy writing their own versions of flatten more than finding legitimate use cases that don't already have trivial solutions.
 
 > A general purpose flattener needs some way to be told what is atomic and what can be further subdivided. Also, it is not obvious how the algorithm should be extended to cover inputs with tree-like data structures with data at nodes as well as the leaves (preorder, postorder, inorder traversal, etc.)
+
+Answer
+====
+
+In that case, there're isn't an easy answer to this but there's always our good friend [Rosetta Code](https://rosettacode.org/wiki/Flatten_a_list), so I'm going with:
+
+
+```python
+>>> lst = [[1,2], [3,4,[5,6]],7]
+>>> def flatten(lst):
+...     return sum((flatten(x) if type(x) == list else [x] for x in lst), [])
+... 
+>>> flatten(lst)
+[1, 2, 3, 4, 5, 6, 7]
+```
+
+
