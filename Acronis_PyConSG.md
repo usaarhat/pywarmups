@@ -261,7 +261,7 @@ For example, for input string "one one two one two three one two three four" you
 "four": 1
 ```
 
-If we don't know how to solve a looping kinda problems in Python, the first thing to do is always to look into [`itertools`](https://docs.python.org/3.5/library/itertools.html) and [`collections`](https://docs.python.org/3.5/library/collections.html) where powerful functions are already coded and most probably optimized to do you looping. 
+If we don't know how to solve a looping kinda problems in Python, the first thing to do is always to look into [`itertools`](https://docs.python.org/3.5/library/itertools.html) and [`collections`](https://docs.python.org/3.5/library/collections.html) where powerful functions are already coded and most probably optimized to do your looping. 
 
 **Answer:**
 
