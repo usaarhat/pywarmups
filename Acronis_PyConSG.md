@@ -81,3 +81,121 @@ So lessons learnt:
  
 Question 2
 ====
+
+What will be the output of the code below:
+
+```python
+[x ** 2 for x in range(5)]
+```
+
+This is an easy one but you might get stymied by the `**` operator, this is simply the square or power of 2 math operation. Here's a nice Stackoverflow to quirky operators: [What does these operators mean?](http://stackoverflow.com/questions/15193927/what-does-these-operator-mean-python)
+
+Answer:
+
+```python
+>>> [x ** 2 for x in range(5)]
+[0, 1, 4, 9, 16]
+```
+
+If we take a closer look and compare it to `x*x` and `math.pow(x,2)` is the same as using `x**2`:
+
+```python
+>>> [x ** 2 for x in range(5)]
+[0, 1, 4, 9, 16]
+>>> [x for x in range(5)]
+[0, 1, 2, 3, 4]
+>>> [x * x for x in range(5)]
+[0, 1, 4, 9, 16]
+>>> import math
+>>> [math.pow(x,2)  for x in range(5)]
+[0.0, 1.0, 4.0, 9.0, 16.0]
+```
+
+----
+
+Question 3
+====
+
+What will be the output of the code below:
+
+```python
+value = 1
+def change():
+    value = 2
+change()
+print value
+```
+
+The obvious answer would be that "it would return a SyntaxError" since there's only 3 spaces instead of 4 after the definition of the `change():` function. But after asking the people at Acronis, they say treat it as 4 spaces instead of 3.
+
+So the asnwer:
+
+```python
+>>> value = 1
+>>> def change():
+...     value = 2
+... 
+>>> change()
+>>> print value
+1
+```
+
+Now that's a tricky question. the global `value` variable doesn't change because when we call the `change()` function, it sets a local `value` within the function scope and once we get out of the function, this local variable gets thrown away.
+
+
+And here's the more interesting fact, even if you pass in the `value` variable into a `change()` function that takes the `value` parameter, the global value still doesn't change:
+
+```
+>>> value = 1
+>>> def change(value):
+...     value = 2
+... 
+>>> change(value)
+>>> print value
+1
+```
+
+Even if we do silly things like adding a `return` to the `change()` function, it's still won't change the global `value` variable:
+
+```python
+>>> value = 1
+>>> def change(value):
+...     value = 2
+...     return value
+... 
+>>> print value
+1
+```
+
+**So the question is how do we change the global `value`?**
+
+So there's 2 ways to do this, one is to "re-assign" the return value from `change()` to the global `value`:
+
+```python
+>>> value = 1
+>>> def change():
+...     value = 2
+...     return value
+... 
+>>> value = change()
+>>> print value
+2
+```
+
+The other way is (IMHO) way cooler by using the `global` keyword inside the function scope and then whenever we access the variable `value` inside the function, it's referring to the global `value` variable.
+
+```python
+>>> value = 1
+>>> def change():
+...     global value
+...     value = 2
+... 
+>>> change()
+>>> print value
+2
+```
+
+----
+
+Question 4
+====
