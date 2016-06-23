@@ -1,4 +1,4 @@
-This is a fun quiz from the guys at [Acronis](http://www.acronis.com/) at their PyCon Dublin booth:
+This is a fun quiz from the guys at [Acronis](http://www.acronis.com/) at their PyCon Singapore booth:
 
 Question 1
 ====
@@ -10,10 +10,7 @@ list = ['a', 'b', 'c', 'd', 'e']
 print list[10:]
 ```
 
-Answer
-====
-
-
+**Answer:**
 
 Now, if we overthink this, we'll think it's a trick question cos `list` is a keyword in Python. But in this case, Python will treat it as a variable name. In that case, the output would be an empty list, since you're trying to access a range of a list that won't be there:
 
@@ -90,7 +87,7 @@ What will be the output of the code below:
 
 This is an easy one but you might get stymied by the `**` operator, this is simply the square or power of 2 math operation. Here's a nice Stackoverflow to quirky operators: [What does these operators mean?](http://stackoverflow.com/questions/15193927/what-does-these-operator-mean-python)
 
-Answer:
+**Answer:**
 
 ```python
 >>> [x ** 2 for x in range(5)]
@@ -266,8 +263,8 @@ For example, for input string "one one two one two three one two three four" you
 
 If we don't know how to solve a looping kinda problems in Python, the first thing to do is always to look into [`itertools`](https://docs.python.org/3.5/library/itertools.html) and [`collections`](https://docs.python.org/3.5/library/collections.html) where powerful functions are already coded and most probably optimized to do you looping. 
 
-Answer
-====
+**Answer:**
+
 
 ```python
 >>> from collections import Counter
@@ -301,8 +298,7 @@ Hmmm, flattening is a much-talked about feature disccused/proposed in core Pytho
 
 > A general purpose flattener needs some way to be told what is atomic and what can be further subdivided. Also, it is not obvious how the algorithm should be extended to cover inputs with tree-like data structures with data at nodes as well as the leaves (preorder, postorder, inorder traversal, etc.)
 
-Answer
-====
+**Answer**:
 
 In that case, there're isn't an easy answer to this but there's always our good friend [Rosetta Code](https://rosettacode.org/wiki/Flatten_a_list), so I'm going with:
 
