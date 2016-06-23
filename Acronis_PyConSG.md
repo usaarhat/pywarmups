@@ -118,7 +118,7 @@ What will be the output of the code below:
 ```python
 value = 1
 def change():
-    value = 2
+   value = 2
 change()
 print value
 ```
