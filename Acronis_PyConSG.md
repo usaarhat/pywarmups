@@ -297,7 +297,6 @@ For example:
 
 Hmmm, flattening is a much-talked about feature disccused/proposed in core Python, as [Raymond Hettinger puts it](https://mail.python.org/pipermail/python-dev/2006-September/068957.html):
 
-    It has been discussed ad nauseam on comp.lang.python. People seem to enjoy writing their own versions of flatten more than finding legitimate use cases that don't already have trivial solutions.
-    
-    A general purpose flattener needs some way to be told what is atomic and what can be further subdivided. Also, it is not obvious how the algorithm should be extended to cover inputs with tree-like data structures with data at nodes as well as the leaves (preorder, postorder, inorder traversal, etc.)
+> It has been discussed ad nauseam on comp.lang.python. People seem to enjoy writing their own versions of flatten more than finding legitimate use cases that don't already have trivial solutions.
 
+> A general purpose flattener needs some way to be told what is atomic and what can be further subdivided. Also, it is not obvious how the algorithm should be extended to cover inputs with tree-like data structures with data at nodes as well as the leaves (preorder, postorder, inorder traversal, etc.)
