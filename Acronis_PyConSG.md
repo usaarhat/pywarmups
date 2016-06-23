@@ -85,7 +85,7 @@ What will be the output of the code below:
 [x ** 2 for x in range(5)]
 ```
 
-This is an easy one but you might get stymied by the `**` operator, this is simply the square or power of 2 math operation. Here's a nice Stackoverflow to quirky operators: [What does these operators mean?](http://stackoverflow.com/questions/15193927/what-does-these-operator-mean-python)
+This is an easy one but you might get stymied by the `**` operator, this is simply the power operation, in the case of `** 2` it's the square or power of 2 math operation. Here's a nice Stackoverflow to quirky operators: [What does these operators mean?](http://stackoverflow.com/questions/15193927/what-does-these-operator-mean-python)
 
 **Answer:**
 
