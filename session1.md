@@ -174,7 +174,14 @@ word_i.is?????()
 
 "One of the best qualities of Python is its consistency. After working with Python for a while, you are able to start making informed, correct guesses about features that are new to you." - [Fluent Python by Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
 
-## More Pythonic idioms when dealing with strings
+Congratulations !!!
+====
+
+You have entered you inaugural *"Hello Word"* in Python and learned about the basic string and list manipulations in python. 
+
+----
+
+## More Pythonic idioms when dealing with strings (Optional)
 
 **Counting the no. of character in a sentence**
 
@@ -226,9 +233,3 @@ print(tokens_no_stop_words)
 
 (The `[word for word in tokens if word not in stopwords]` code is sort of a funny syntax, it's call **list comprehension** and we'll explain it in the later sessions.)
 
-----
-
-Congratulations !!!
-====
-
-You have entered you inaugural *"Hello Word"* in Python and learned about the basic string and list manipulations in python. 
