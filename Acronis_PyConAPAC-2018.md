@@ -68,6 +68,8 @@ a = ()   # returns a tuple of length 0
 a = (1,) # returns a tuple of length 1 with 1 assigned to the 1st element.
 ```
 
+**Post-mortem:** Checked with the Acronis people, it's a trick question not a typo ;P
+
 Question 3
 ====
 
