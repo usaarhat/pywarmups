@@ -206,15 +206,21 @@ Which module is used for regular expression?
  ```
  # I'm gonna cheat and use the `six` package.
  
- from six import binary_type
- 
- def byterize(input):
-     """
-     :param input: A string or byte
-     :type input: str/btye
-     """
-     return binary_type(input)
- ```
+from six import binary_type
+def byterize(input, encoding='utf-8'):
+    """
+    :param input: A string or byte
+    :type input: str/btye
+    """
+    return binary_type(input, encoding)
+```
+
+[out]:
+
+```
+>>> byterize('abc')
+b'abc'
+```
  
  
  Question 10
