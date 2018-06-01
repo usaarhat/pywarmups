@@ -119,7 +119,7 @@ Here's a nice post that describe basic Python operator https://www.tutorialspoin
 Question 5
 ====
 
-Is this syntax valid?
+Is this syntax [in the code below] valid?
 
 ```
 a = { i for i in range(0,10,2) }
