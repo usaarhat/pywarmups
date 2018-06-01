@@ -160,9 +160,66 @@ a = {1,2,3} < {2,3,4,5}
 ```
 
 - True
-- False
+- **False**
 
 This is a really fun question! The less-than operator says that the type would return as a boolean. 
 
-The fun part is understanding how sets are comparable. 
+The fun part is understanding how sets are comparable. Python checks through every element in the set and check:
 
+ - `s1 < s2` or `s1 > s2`: "s1 is a subset of s2" or "s2 is a subset of s1"
+ - `s1 <= s2` or `s1 >= s2`: "s1 is a subset or equal to s2" or "s2 is a subset or equal to s1"
+ 
+ 
+In the case of `a = {1,2,3} < {2,3,4,5}`, the first set contains `1` which the second set doesn't so it doesn't fit the subset criteria and should return a False.
+
+Question 7
+====
+
+Opening a file in `'a'` mode
+
+- Opens a file for reading
+- Opens a file for writing
+- **Opens a file for appending at the end of the file**
+- Open a file for exclusive creation
+
+
+The interesting option is exclusive creation, you can do a file open with `'x'` mode, https://docs.python.org/3/library/functions.html#open That'll prevent any overwriting / pollution of existing file.
+
+
+Question 8
+====
+
+Which module is used for regular expression?
+
+ - **re**
+ - **regex**
+ 
+ 
+ This is a trick question? `re` is the native library but there is [`regex` library](https://pypi.org/project/regex/) that one can pip install too =)
+ 
+ 
+ Question 9
+ ====
+ 
+ Write a function named to byte, which accepts an argument of either str or bytes and returns the bytes value. You need to conver str to bytes otherwise just return bytes as it is.
+ 
+ ```
+ # I'm gonna cheat and use the `six` package.
+ 
+ from six import binary_type
+ 
+ def byterize(input):
+     """
+     :param input: A string or byte
+     :type input: str/btye
+     """
+     return binary_type(input)
+ ```
+ 
+ 
+ Question 10
+ ====
+ 
+Write a program to exhibit the features of class named Employee.
+ 
+Answer: Ermmm, this https://docs.python.org/3.3/tutorial/classes.html#odds-and-ends? 
