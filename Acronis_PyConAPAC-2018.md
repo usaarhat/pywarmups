@@ -222,4 +222,14 @@ Which module is used for regular expression?
  
 Write a program to exhibit the features of class named Employee.
  
-Answer: Ermmm, this https://docs.python.org/3.3/tutorial/classes.html#odds-and-ends? 
+**Answer**: Ermmm, this https://docs.python.org/3.3/tutorial/classes.html#odds-and-ends? 
+
+
+I do like `namedtuple` though, so how about:
+
+```
+from collections import namedtuple
+Employee = namedtuple('Employee', 'name, dept, salary')
+```
+
+What's cooler is if we use dataclass https://www.python.org/dev/peps/pep-0557/ but Python 3.7, so lets wait for a few month.
