@@ -13,7 +13,7 @@ print(a[3:1:-1])
 - Syntax Error
 - Value Error
 - [3,2]
-- **[4,3]**
+- **[4,3]**  # Answer.
 
 The extended slice notation allows a **third argument (aka 'step'/'stride')** in Python's slice syntax. <br>
 
@@ -78,7 +78,7 @@ a = -1
 b = a ** 0.5
 ```
 
-- **float**
+- **float** # Answer.
 - complex 
 - int
 - str
@@ -99,7 +99,7 @@ a = -4 // 1.5
 - 2.0
 - 3.0
 - -2.0
-- **-3.0**
+- **-3.0** # Answer.
 
 The `//` syntax is floor division. It does the standard division and the take the "floor" of it.
 
@@ -125,7 +125,7 @@ Is this syntax valid?
 a = { i for i in range(0,10,2) }
 ```
 
-- **Yes**
+- **Yes** # Answer.
 - No
 
 This is interesting. 
@@ -160,7 +160,7 @@ a = {1,2,3} < {2,3,4,5}
 ```
 
 - True
-- **False**
+- **False** # Answer.
 
 This is a really fun question! The less-than operator says that the type would return as a boolean. 
 
@@ -179,7 +179,7 @@ Opening a file in `'a'` mode
 
 - Opens a file for reading
 - Opens a file for writing
-- **Opens a file for appending at the end of the file**
+- **Opens a file for appending at the end of the file** # Answer.
 - Open a file for exclusive creation
 
 
@@ -191,8 +191,8 @@ Question 8
 
 Which module is used for regular expression?
 
- - **re**
- - **regex**
+ - **re**    # Answer.
+ - **regex** # Answer?
  
  
  This is a trick question? `re` is the native library but there is [`regex` library](https://pypi.org/project/regex/) that one can pip install too =)
